@@ -10,5 +10,7 @@ export default defineConfig({
     // Vite automatically handles import.meta.env.VITE_*, but some older libs might use process.env
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     '__DEFINES__': {},
+    '__HMR_CONFIG_NAME__': JSON.stringify('vite'), // Or an empty string if not used
+    '__BASE__': JSON.stringify('/'),
   },
 })
