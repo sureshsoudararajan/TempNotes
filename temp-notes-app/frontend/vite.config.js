@@ -9,5 +9,6 @@ export default defineConfig({
     // This is important for some libraries that might expect process.env.NODE_ENV
     // Vite automatically handles import.meta.env.VITE_*, but some older libs might use process.env
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    '__DEFINES__': {},
   },
 })
