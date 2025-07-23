@@ -1,0 +1,62 @@
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toast {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.95;
+}
+
+.toast-success {
+  background-color: #28a745; /* Green for success */
+}
+
+.toast-error {
+  background-color: #dc3545; /* Red for error */
+}
+
+.toast-info {
+  background-color: #17a2b8; /* Blue for info */
+}
+
+.toast p {
+  margin: 0;
+  padding-right: 10px;
+}
+
+.toast button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.toast button:last-child {
+  margin-left: 10px;
+}
+
+.toast button:first-of-type {
+  /* Style for the action button (e.g., Undo) */
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-right: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.toast button:first-of-type:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
